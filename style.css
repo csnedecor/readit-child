@@ -1,0 +1,149 @@
+/*
+ Theme Name:   Readit Child
+ Description:  Readit Child Theme
+ Author:       Cori Snedecor
+ Template:     readit
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  readit-child
+*/
+body{
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+}
+body.custom-background{
+  background-size: 100% 100%;
+}
+.cover-image{
+  background-image: url("/wp-content/uploads/2015/09/tahoe-cover-image.jpg");
+  padding: 10px;
+  margin: 80px 0px 30px;
+  min-height: 400px;
+}
+.entry-header{
+  background: none;
+}
+header#masthead.site-header{
+  background: #fff;
+  width: 100%;
+}
+.site-branding h1, .site-branding h1 a{
+  color: #32383f;
+}
+.cd-primary-nav-trigger .cd-menu-icon{
+  background-color: #32383f!important;
+}
+.cd-primary-nav-trigger .cd-menu-icon::before, .cd-primary-nav-trigger .cd-menu-icon::after{
+  background-color: #32383f!important;
+}
+.site-branding h1{
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.blog-entry-title, .page-entry-title{
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+h2.page-entry-subtitle, h2.blog-entry-subtitle{
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #fff;
+  font-size: 27px;
+  text-align: center;
+
+}
+.perri-button span{
+  border-color: #fff!important;
+  text-transform: uppercase;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px!important;
+  padding-top:4px!important;
+  padding-bottom: 3px!important;
+}
+.blog-archive article{
+  background: #32383f;
+  border: none;
+}
+.entry-content{
+  color: #fff;
+}
+.entry-content h1{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  display: inline;
+}
+img.alignleft.size-medium{
+  width: 45%;
+}
+
+img.lazyOwl{
+  height: 300px;
+}
+.owl-theme .owl-controls .owl-page span{
+  background: #fff;
+}
+div#owl-carousel-23.owl-carousel.owl-theme{
+  margin-top: 30px;
+  margin-left: 4%;
+  position: relative;
+  z-index: 10000;
+}
+#books-slider{
+  margin-bottom: 30px;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+  background: none;
+  font-size: 100px;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left:-8%;
+  top: 60px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: 1%;
+  top: 60px;
+}
+
+
+@media handheld, only screen and (max-width: 767px) {
+  .blog-entry-title, .page-entry-title{
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .owl-theme .owl-controls .owl-buttons .owl-next{
+    right: -4%;
+  }
+  .owl-theme .owl-controls .owl-buttons .owl-prev{
+    left: -12%;
+  }
+}
+@media handheld, only screen and (max-width: 480px) {
+    .blog-entry-title, .page-entry-title{
+    font-size: 40px;
+    line-height: 44px;
+  }
+  h2.page-entry-subtitle, h2.blog-entry-subtitle{
+    font-size: 20px;
+    line-height:24px;
+  }
+  .owl-theme .owl-controls .owl-buttons .owl-prev{
+    left: -19%;
+  }
+}
