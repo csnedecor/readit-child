@@ -88,14 +88,16 @@ h2.page-entry-subtitle, h2.blog-entry-subtitle{
 img.alignleft.size-medium{
   width: 45%;
 }
-
-img.lazyOwl{
-  height: 300px;
+.owl-carousel .owl-wrapper::after{
+  visibility: visible;
+}
+.owl-carousel .item img{
+  width: auto!important;
 }
 .owl-theme .owl-controls .owl-page span{
-  background: #fff;
+  background: #fff!important;
 }
-div#owl-carousel-23.owl-carousel.owl-theme{
+.owl-carousel.owl-theme{
   margin-top: 30px;
   margin-left: 4%;
   position: relative;
@@ -106,8 +108,8 @@ div#owl-carousel-23.owl-carousel.owl-theme{
 }
 .owl-theme .owl-controls .owl-buttons div {
   position: absolute;
-  background: none;
-  font-size: 100px;
+  background: none!important;
+  font-size: 100px!important;
   font-family: 'Pathway Gothic One', sans-serif;
 }
 
