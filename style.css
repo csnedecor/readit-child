@@ -10,8 +10,15 @@
 */
 body{
   font-family: 'Roboto', sans-serif;
+  color: #32383f!important;
 }
 h1{
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+h2{
+  font-family: 'Pathway Gothic One', sans-serif!important;
+}
+.site-info{
   font-family: 'Roboto', sans-serif;
 }
 body.custom-background{
@@ -55,6 +62,24 @@ h2.page-entry-subtitle, h2.blog-entry-subtitle{
   font-size: 27px;
   text-align: center;
 
+}
+a.su-button.su-button-style-default{
+  border: none!important;
+}
+.perri-widget-button span{
+  border-color: #32383f!important;
+  border-radius: 0px!important;
+  color: #32383f!important;
+  background: #fff;
+  text-transform: uppercase;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px!important;
+  padding-top:4px!important;
+  padding-bottom: 3px!important;
 }
 .perri-button span{
   border-color: #fff!important;
@@ -121,6 +146,25 @@ img.alignleft.size-medium{
 .owl-theme .owl-controls .owl-buttons .owl-next{
   right: 1%;
   top: 60px;
+}
+.su-tabs{
+  background: #587096!important;
+}
+.su-tabs-nav span{
+  color: #fff!important;
+}
+.su-tabs-nav span.su-tabs-current{
+  color: #32383f!important;
+}
+.su-tabs-nav span:hover{
+  background:rgba(255, 255, 255, 0.8)!important;
+  color: #32383f!important;
+}
+.mfp-wrap{
+  z-index: 100000!important;
+}
+.mfp-bg{
+  z-index: 100000!important;
 }
 
 
