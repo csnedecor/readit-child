@@ -52,13 +52,15 @@ get_header(); ?>
         <?php get_sidebar(); ?>
 
   </div>
-    <!--Add Owl Slider for books: -->
-    <div class="grid grid-pad">
-        <article id="books-slider">
-            <div class="entry-content">
-                <h1>The Books (in order of publication)</h1>
-                <?php echo do_shortcode("[owl-carousel category='books' autoPlay='true' items='4' navigation=true navigationText=<,> lazyLoad=true]"); ?></div>
-        </article>
-    </div>
+    <!--Add Owl Slider for books if it is the homepage or a book page: -->
+    <?php if($post->post_parent == '154' || is_page("PERRI O'SHAUGHNESSY")) : ?>
+        <div class="grid grid-pad">
+            <article id="books-slider">
+                <div class="entry-content">
+                    <h1>The Books (in order of publication)</h1>
+                    <?php echo do_shortcode("[owl-carousel category='books' autoPlay='true' items='4' navigation=true navigationText=<,> lazyLoad=true]"); ?></div>
+            </article>
+        </div>
+    <?php endif; ?>
 </section>
 <?php get_footer(); ?>
