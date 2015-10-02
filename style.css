@@ -40,11 +40,27 @@ header#masthead.site-header{
 .site-branding h1, .site-branding h1 a{
   color: #32383f;
 }
+.site-branding{
+  margin-top: 0px;
+  margin-left: 0px;
+}
+ul#primary-menu.menu{
+  margin: 0px;
+}
 .cd-primary-nav-trigger .cd-menu-icon{
   background-color: #32383f!important;
 }
 .cd-primary-nav-trigger .cd-menu-icon::before, .cd-primary-nav-trigger .cd-menu-icon::after{
   background-color: #32383f!important;
+}
+span.cd-menu-icon.is-clicked{
+  background-color: #fff!important;
+}
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::before{
+  background-color: #fff!important;
+}
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::after{
+  background-color: #fff!important;
 }
 .site-branding h1{
   font-family: 'Pathway Gothic One', sans-serif;
@@ -110,6 +126,10 @@ a.su-button.su-button-style-default{
   padding-bottom: 10px;
   display: inline;
 }
+.entry-content h2{
+  margin-top: 10px;
+  font-size: 18px;
+}
 img.alignleft.size-medium{
   width: 45%;
 }
@@ -166,7 +186,51 @@ img.alignleft.size-medium{
 .mfp-bg{
   z-index: 100000!important;
 }
+.books-gallery .su-custom-gallery-slide{
+  width: 250px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.faqs .su-spoiler-title{
+  font-size: 18px;
+}
+.entry-content a{
+  color: #c6daf3;
+}
+.entry-content a:hover{
+  font-weight: bold;
+  color: #fff;
+}
+.perrio-menu{
+  display: inline-block;
+  position: relative;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  float: right;
+  margin-right: 1%;
+  clear: both;
+  margin-top: 0px;
+  margin-bottom: -20px;
+  margin-left: 0px;
+  text-align: right;
+  width: 70%;
+}
+.perrio-menu li{
+  display: inline;
+  margin-left: 15%;
+}
+.perrio-mobile-view{
+  display: none;
+}
 
+@media only screen and (max-width: 850px){
+  .perrio-menu li{
+    margin-left: 10%;
+  }
+}
 
 @media handheld, only screen and (max-width: 767px) {
   .blog-entry-title, .page-entry-title{
@@ -178,6 +242,25 @@ img.alignleft.size-medium{
   }
   .owl-theme .owl-controls .owl-buttons .owl-prev{
     left: -12%;
+  }
+  .perrio-menu li{
+    margin-left: 5%;
+  }
+  .perrio-menu{
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .perrio-mobile-view{
+    display: block;
+    margin-top: -5px;
+  }
+  ul.perrio-mobile-view.cd-primary-nav{
+    height: auto;
+    padding: 10px;
+  }
+  .perrio-menu{
+    display: none;
   }
 }
 @media handheld, only screen and (max-width: 480px) {
