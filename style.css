@@ -123,8 +123,7 @@ a.su-button.su-button-style-default{
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   border-bottom: 1px solid #fff;
-  padding-bottom: 10px;
-  display: inline;
+  display: inline-block;
 }
 .entry-content h2{
   margin-top: 10px;
@@ -225,6 +224,9 @@ img.alignleft.size-medium{
 .perrio-mobile-view{
   display: none;
 }
+ul.sub-menu{
+  display: none;
+}
 
 @media only screen and (max-width: 850px){
   .perrio-menu li{
@@ -258,6 +260,7 @@ img.alignleft.size-medium{
   ul.perrio-mobile-view.cd-primary-nav{
     height: auto;
     padding: 10px;
+    background-color: rgba(50, 56, 63, 0.9);
   }
   .perrio-menu{
     display: none;
