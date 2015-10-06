@@ -47,10 +47,11 @@ jQuery(document).ready(function($){
 
   $('li.menu-item-has-children').hover(
     function () {
-      $(this).children('ul.sub-menu').show();
+      $(this).children('ul.sub-menu').fadeIn('slow');
+      $(this).children('ul.sub-menu').addClass('menu-dropdown')
     },
     function () {
-      $(this).children('ul.sub-menu').hide();
+      $(this).children('ul.sub-menu').fadeOut('slow');
     }
   );
 });
