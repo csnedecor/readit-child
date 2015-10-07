@@ -16,12 +16,14 @@ get_header(); ?>
     <div class="grid grid-pad">
         <div class="col-1-1">
             <div class="cover-image">
-          <?php the_title( '<h1 class="page-entry-title">', '</h1>' ) ?>
-              <?php if(is_page("PERRI O'SHAUGHNESSY")) : ?>
-                <h2 class="page-entry-subtitle">
-                    <em>New York Times</em> bestselling author of the Nina Reilly series and more
-                </h2>
-                 <?php endif; ?>
+                <div class="titles">
+                    <?php the_title( '<h1 class="page-entry-title">', '</h1>' ) ?>
+                    <?php if(is_page("PERRI O'SHAUGHNESSY")) : ?>
+                        <h2 class="page-entry-subtitle">
+                            <em>New York Times</em> bestselling author of the Nina Reilly series and more
+                        </h2>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
     </div>

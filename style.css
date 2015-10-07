@@ -25,10 +25,16 @@ body.custom-background{
   background-size: 100% 100%;
 }
 .cover-image{
-  background-image: url("/wp-content/uploads/2015/09/tahoe-cover-image.jpg");
-  padding: 10px;
+  background-image: url("/wp-content/uploads/2015/10/Nina-purple-cover-image.jpg");
+  padding: 0 20% 0 20%;
   margin: 80px 0px 30px;
   min-height: 400px;
+  background-size: cover;
+}
+.titles{
+  background-color: rgba(54, 31, 57, 0.3);
+  position: relative;
+  top: 130px;
 }
 .entry-header{
   background: none;
@@ -266,6 +272,9 @@ ul.sub-menu{
 @media only screen and (max-width: 850px){
   .perrio-menu li{
     margin-left: 10%;
+  }
+  .titles{
+    top: 70px;
   }
 }
 
